@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Khemlata's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Khemlata</span>
+                <div>and I'm a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Developer Image.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-tittle">HTML</div>
+                    <div class="vertical-desc">HTML (HyperText Markup Language) is the standard markup language used to
+                        create structure web pages. It defines elements like paragraphs, images, links, and forms that
+                        are displayed in web browser.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">CSS</div>
+                    <div class="vertical-desc">CSS (Cascading Style Sheet) is used to style and design web pages by
+                        controlling colors, fonts, layouts and spacing. it helps make website visually attractive and
+                        responsive across different devices.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">JS</div>
+                    <div class="vertical-desc">JS (JavaScript) is a programming language used to make web pages
+                        interactive and dynamic. It enables Features like form validation, animinations pop-ups, and
+                        real-time content updates.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">MS-Word</div>
+                    <div class="vertical-desc">MS-Word is a word processing software develop by microsoft.com that is
+                        used to create, edit, format, and print documents. It helps users prepare letters, reports,
+                        resumes, and other profeesional documents efficiently.</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">MS-Excel</div>
+                    <div class="vertical-desc">MS-Excel is a spreadsheet software develop by microsoft.com that is used
+                        to organize, calculate and analyze data. It provide features like formula, charts, and tables to
+                        manage information efficiently.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Khemlata's Developer</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.khemlata'sportfolio.com | all rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
