@@ -3,10 +3,15 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(135deg, #050816, #0b1120, #111827);
   color: white;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -20,12 +25,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.left {
-  font-size: 30px;
-  font-weight: bold;
-  color: #9f6cff;
 }
 
 nav ul {
@@ -47,7 +46,6 @@ nav ul li a:hover {
   color: #9f6cff;
 }
 
-
 main hr {
   border: 0;
   background-color: #9c97f1;
@@ -56,7 +54,9 @@ main hr {
 }
 
 .left {
-  font-size: 1.5rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: #9f6cff;
 }
 
 .firstSection {
@@ -69,9 +69,9 @@ main hr {
   gap: 60px;
 }
 
-.firstSection > div {
+/* .firstSection > div {
   width: 30%;
-}
+} */
 
 .leftSection {
   flex: 1;
@@ -155,7 +155,7 @@ main hr {
   color: gray;
 }
 
- #element {
+#element {
   color: #8b5cf6;
   font-weight: bold;
 }
@@ -188,12 +188,12 @@ main hr {
 }
 
 .skill-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 35px 25px;
   text-align: center;
-  transition: .4s;
+  transition: 0.4s;
   backdrop-filter: blur(10px);
 }
 
@@ -219,7 +219,7 @@ main hr {
   font-size: 15px;
 }
 
-footer { 
+footer {
   background: #070b1d;
   padding-top: 60px;
   margin-top: 80px;
@@ -317,3 +317,238 @@ footer {
   color: #b26cff;
 }
 
+
+  /* ======Responsive Design====== */
+
+
+/* Large Laptop */
+@media (max-width: 1200px) {
+  .leftSection h1 {
+    font-size: 55px;
+  }
+
+  .image-box {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+  nav {
+    padding: 0 30px;
+  }
+
+  .left {
+    font-size: 24px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .leftSection h1 {
+    font-size: 50px;
+  }
+
+  .leftSection h2 {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .image-box {
+    width: 320px;
+    height: 320px;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 0;
+    gap: 40px;
+  }
+
+  .leftSection {
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+  }
+
+  .leftSection h1 {
+    font-size: 42px;
+  }
+
+  .leftSection h2 {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-box {
+    width: 280px;
+    height: 280px;
+  }
+
+  .secondSection h1 {
+    font-size: 34px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-box h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .left {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .firstSection {
+    padding: 40px 0;
+  }
+
+  .greeting {
+    font-size: 18px;
+  }
+
+  .leftSection h1 {
+    font-size: 36px;
+  }
+
+  .leftSection h2 {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .image-box {
+    width: 230px;
+    height: 230px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 30px 20px;
+  }
+
+  .secondSection {
+    padding: 60px 0;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-box h2 {
+    font-size: 26px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding: 18px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 400px) {
+  .leftSection h1 {
+    font-size: 30px;
+  }
+
+  .leftSection h2 {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .image-box {
+    width: 190px;
+    height: 190px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .secondSection h1 {
+    font-size: 28px;
+  }
+
+  .skill-card h3 {
+    font-size: 20px;
+  }
+}
