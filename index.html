@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
 
   <body>
@@ -25,9 +29,9 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="contact">Contact Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -35,9 +39,8 @@
     <!-- *********************************************************************************** -->
     <main>
       <section class="firstSection" id="home">
-
         <!-- ******************************************************************************* -->
-         
+
         <div class="leftSection">
           <p class="greeting">👋 Hello, I'm</p>
 
@@ -48,9 +51,10 @@
           <h2>I'm a <span id="element"></span></h2>
 
           <p class="hero-text">
-            Passionate Frontend Developer skilled in HTML, CSS, JavaScript,
-            React.js and WordPress. I enjoy building responsive, modern and
-            user-friendly websites with clean code and creative UI designs.
+            I am a passionate Frontend Developer who enjoy creating responsive,
+            interactive and modern web applications. I enjoy transforming ideas
+            into beautiful user experiences using HTML, CSS, JavaScript,
+            React.js and WordPress.
           </p>
 
           <div class="buttons">
@@ -67,21 +71,67 @@
             </button>
           </div>
         </div>
-        
+
         <!-- ******************************************************************************* -->
 
-         <div class="rightSection">
+        <div class="rightSection">
           <div class="image-box">
-            <img src="Image.jpg" alt="Khemlata" />
+            <img src="Profile Image.jpeg" alt="Khemlata" />
           </div>
         </div>
       </section>
       <hr />
 
-      <!-- ********************************************************************************* -->
-       
-      <section class="secondSection" id="about">
+      <section class="aboutSection" id="about">
+        <span class="text-gray">Get To Know More</span>
 
+        <h1>About Me</h1>
+
+        <div class="about-container">
+          <div class="about-content">
+            <h2>Frontend Developer</h2>
+            <p>
+              Hello! I'm <strong>Khemlata</strong>, a passionate and dedicated
+              Frontend Developer with strong knowledge of HTML, CSS, JavaScript,
+              React.js, and WordPress. I enjoy creating modern, responsive, and
+              user-friendly websites that provide a smooth and engaging user
+              experience. I focus on writing clean, efficient, and maintainable
+              code while building attractive and functional interfaces. I am
+              always eager to learn new technologies, improve my development
+              skills, and stay updated with the latest trends in web
+              development. I love turning creative ideas into real-world web
+              applications and solving practical problems through innovative and
+              responsive designs. Currently, I am looking for opportunities
+              where I can enhance my skills, contribute to meaningful projects,
+              and grow as a professional Frontend Developer.
+            </p>
+            <div class="about-info">
+              <div class="info-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>B.Tech (CSE)</p>
+              </div>
+
+              <div class="info-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Projects</h3>
+                <p>5+ Completed</p>
+              </div>
+
+              <div class="info-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Location</h3>
+                <p>Nagpur, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Skills Section -->
+
+      <section class="skillSection" id="skills">
         <span class="text-gray"> Skills & Technologies </span>
         <h1>My Technical Skills</h1>
 
@@ -98,6 +148,14 @@
             <i class="fa-brands fa-css3-alt"></i>
             <h3>CSS3</h3>
             <p>Creates beautiful, responsive and attractive user interfaces.</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="bi bi-bootstrap-fill"></i>
+            <h3>Bootstrap</h3>
+            <p>
+              Bootstrap is a CSS framework for building responsive websites.
+            </p>
           </div>
 
           <div class="skill-card">
@@ -129,13 +187,102 @@
               Organize, analyze and visualize data using formulas and charts.
             </p>
           </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-wordpress"></i>
+            <h3>WordPress</h3>
+            <p>Creates beautiful, responsive and attractive user interfaces.</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Graphic Design</h3>
+            <p>
+              Graphic Design is the art of creating visual content using images,
+              text, and colors.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-git-alt"></i>
+            <h3>Git</h3>
+            <p>
+              Git is a version control system used to track changes in source
+              code.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <p>
+              GitHub is a cloud-based platform used to store, manage, and share
+              Git repositories.
+            </p>
+          </div>
         </div>
       </section>
+      <hr />
+
+      <!-- Project Section -->
+
+      <section class="projectSection" id="projects">
+        <span class="text-gray">My Recent Work</span>
+        <h1>Projects</h1>
+
+        <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio website built using HTML, CSS
+                and JavaScript.
+              </p>
+
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>
+                Weather application using JavaScript API with live weather
+                updates.
+              </p>
+
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>React Todo App</h3>
+              <p>Task management application developed using React.js.</p>
+
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
     </main>
 
     <!-- ************************************************************************************* -->
 
-    <footer>
+    <footer id="contact">
       <div class="footer">
         <div class="footer-box">
           <h2>Khemlata's Developer</h2>
@@ -188,6 +335,14 @@
             <li>Location</li>
           </ul>
         </div>
+      </div>
+
+      <div class="footer-contact">
+        <ul>
+        <li><i class="fa-solid fa-envelope"></i> thakrem983@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +91 9699206975</li>
+        <li><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra</li>
+      </ul>
       </div>
 
       <div class="footer-bottom">
